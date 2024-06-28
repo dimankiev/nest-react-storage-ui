@@ -1,0 +1,16 @@
+.itemName {
+  .itemName__text:not(.goBack) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+
+      .itemName__editIcon {
+        visibility: visible;
+      }
+    }
+  }
+
+  .itemName__editIcon {
+    visibility: hidden;
+  }
+}
