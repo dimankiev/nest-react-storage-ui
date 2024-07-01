@@ -4,7 +4,7 @@ import {GoogleOAuthProvider} from "@react-oauth/google";
 const Page = () => {
     return (
         <GoogleOAuthProvider
-            clientId={process.env.GOOGLE_CLIENT_ID!}
+            clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}
         >
             <Login />
         </GoogleOAuthProvider>
