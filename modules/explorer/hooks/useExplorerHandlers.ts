@@ -1,14 +1,14 @@
 'use client';
 
-import {fileService} from "../services/explorer.service";
-import {useExplorerStore} from "./useExplorerStore";
+import { fileService } from '../services/explorer.service';
+import { useExplorerStore } from './useExplorerStore';
 
 export const useExplorerHandlers = () => {
     const explorerStore = useExplorerStore;
 
     const fetchItems = async (folders: string[]) => {
         return await fileService.listFiles(folders);
-    }
+    };
 
     const handleShare = async (fileName: string) => {
         const path = explorerStore.getState().currentPath;

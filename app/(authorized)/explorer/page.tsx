@@ -1,9 +1,7 @@
-import { Explorer } from "./_components/Explorer";
+import { Explorer } from './_components/Explorer';
 
 const Page = () => {
-    return (
-        <Explorer />
-    );
-}
+    return <Explorer />;
+};
 
 export default Page;

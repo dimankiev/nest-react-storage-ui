@@ -1,5 +1,5 @@
-import Login from "./_components/Login";
-import {GoogleOAuthProvider} from "@react-oauth/google";
+import Login from './_components/Login';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const Page = () => {
     return (
@@ -9,6 +9,6 @@ const Page = () => {
             <Login />
         </GoogleOAuthProvider>
     );
-}
+};
 
 export default Page;

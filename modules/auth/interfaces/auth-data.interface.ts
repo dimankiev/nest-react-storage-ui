@@ -1,6 +1,6 @@
 export interface IAuthData {
     // Data about the user
-    user: IAuthDataUser
+    user: IAuthDataUser;
 
     // JWT token
     token: string;

@@ -1,4 +1,4 @@
-import { PopupState } from "@modules/popup/interfaces";
+import { PopupState } from '@modules/popup/interfaces';
 
 export const itemMovePopup = (
     setPopupState: (popupState: PopupState) => void,
@@ -9,13 +9,16 @@ export const itemMovePopup = (
 ): void => {
     setPopupState({
         isOpen: true,
-        title: success && "Success" || "Failed",
-        content: success && `Moved ${draggedItemName} to ${targetName}` || "Failed to move.",
+        title: (success && 'Success') || 'Failed',
+        content:
+            (success && `Moved ${draggedItemName} to ${targetName}`) ||
+            'Failed to move.',
         buttons: [
             {
-                text: "OK",
+                text: 'OK',
                 onClick: () => setPopupState({ ...popupState, isOpen: false }),
-                color: success && "bg-blue-500" || "bg-red-500"
-            }],
-    })
-}
+                color: (success && 'bg-blue-500') || 'bg-red-500',
+            },
+        ],
+    });
+};

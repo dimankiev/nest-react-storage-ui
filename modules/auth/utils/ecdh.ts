@@ -12,6 +12,6 @@ export function generateECDHKeyPair(): ECDHKeyPair {
 
     return {
         privateKey: utils.bytesToHex(privateKey),
-        publicKey: utils.bytesToHex(publicKey)
+        publicKey: utils.bytesToHex(publicKey),
     };
 }
